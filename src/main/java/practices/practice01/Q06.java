@@ -5,7 +5,7 @@ public class Q06 {
         //Type code to calculate sum of all whole number primitive data types' min and max values.
 
     public static void main(String[] args) {
-        //byte, short, integer, long
+        //byte, short, integer, long ==>whole numbers
         byte minByte = Byte.MIN_VALUE;
         byte maxByte = Byte.MAX_VALUE;
 
@@ -19,6 +19,18 @@ public class Q06 {
         long maxLong = Long.MAX_VALUE;
 
         System.out.println(minByte+maxByte+minShort+maxShort+minInt+maxInt+minLong+maxLong);
+
+        //decimal numbers
+
+        double maxDouble=Double.MAX_VALUE;
+        double minDouble=Double.MIN_VALUE;
+
+
+
+        System.out.println("maxDouble = " + maxDouble);
+        System.out.println("minDouble = " + minDouble);
+
+
 
     }
 }

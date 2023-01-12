@@ -13,5 +13,17 @@ public class Q04 {
 
         System.out.println("Hypotenuse: "+c);
 
+
+
+
+        double d=5;
+        double e=12;
+        double f= Math.sqrt(d*d+e*e);
+
+        System.out.println("Hypotenuse: "+f); // 13
+
+
+
+
     }
 }

@@ -21,7 +21,7 @@ public class Q03 {
         double bd=Double.valueOf(book);  //cmd+d  copy the same line
 
         System.out.println("sd+bd = " + (sd + bd));
-        System.out.println(sd+bd);
+        System.out.println(sd+bd); //
 
 
 

@@ -49,6 +49,8 @@ public class Ternary01 {
         Serializable sr = d > 0 && e > 0 ? d * e : "I do not know how to multiply";
         System.out.println("sr = " + sr);
 
+        //
+
 
     }
 

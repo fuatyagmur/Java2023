@@ -21,6 +21,8 @@ public class ForLoop002 {
             char ch = t.charAt(i);
             if(t.indexOf(ch) == t.lastIndexOf(ch)){
                 System.out.print(ch);
+
+
             }
         }
 

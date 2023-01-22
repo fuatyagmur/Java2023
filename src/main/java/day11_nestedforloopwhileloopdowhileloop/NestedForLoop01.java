@@ -1,5 +1,7 @@
 package day11_nestedforloopwhileloopdowhileloop;
 
+import java.util.Scanner;
+
 public class NestedForLoop01 {
 
     public static void main(String[] args) {
@@ -25,6 +27,55 @@ public class NestedForLoop01 {
 
 
         }
+
+
+
+
+
+        int rowNumber=5;
+
+        System.out.println();
+
+        for (int i=1; i<=rowNumber; i++){
+
+
+
+            for (int k=1; k<=i; k++){
+                System.out.print(k);
+
+            }
+
+            System.out.println();
+
+        }
+
+
+        Scanner input=new Scanner(System.in);
+        System.out.println("Please enter row number...");
+
+        int rowNum=input.nextInt();
+
+        System.out.println();
+
+
+        for (int i=1; i<=rowNum; i++){
+
+            for (int k=1; k<=i; k++){
+
+                System.out.print(k+" ");
+            }
+
+            System.out.println();
+        }
+
+
+
+
+
+
+
+
+
 
 
 

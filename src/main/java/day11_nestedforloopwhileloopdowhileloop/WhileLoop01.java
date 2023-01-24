@@ -9,15 +9,15 @@ public class WhileLoop01 {
         //Example 1: Type code to print integers from 4 to 7 on the console
 
         //1.Way: Use for-loop
-        for(int i=4; i<8; i++){
+        for (int i = 4; i < 8; i++) {
             System.out.print(i + " ");
         }
 
         System.out.println();
 
         //2.Way: Use while-loop
-        int i=4;
-        while(i<8){
+        int i = 4;
+        while (i < 8) {
             System.out.print(i + " ");
             i++;
         }
@@ -27,8 +27,8 @@ public class WhileLoop01 {
         //Example 2: Type code to print "odd integers" from 12 to 67 in the same line with a space between them
         int k = 12;
 
-        while(k<15){
-            if(k%2!=0) {
+        while (k < 15) {
+            if (k % 2 != 0) {
                 System.out.print(k + " ");
             }
             k++;//Do not forget increment part in while-loop
@@ -40,7 +40,7 @@ public class WhileLoop01 {
         int m = 12;
         int sum = 0;
 
-        while(m<15){
+        while (m < 15) {
             sum = sum + m;
             m++;
         }
@@ -57,9 +57,9 @@ public class WhileLoop01 {
 
         int sumOfDigits = 0;
 
-        while(num>0){
-            sumOfDigits = sumOfDigits + num%10;
-            num = num/10;
+        while (num > 0) {
+            sumOfDigits = sumOfDigits + num % 10;
+            num = num / 10;
         }
         System.out.println(sumOfDigits);
 
@@ -74,28 +74,31 @@ public class WhileLoop01 {
 
         int r = 1;
 
-        while(r<11){
-            System.out.println(n + "x" + r + "=" + (n*r));
+        while (r < 11) {
+            System.out.println(n + "x" + r + "=" + (n * r));
             r++;
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

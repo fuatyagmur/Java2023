@@ -44,6 +44,25 @@ public class DoWhileLoop01 {
 
 
 
+        do {
+
+            System.out.println("Please enter an integer...");
+            int f=input.nextInt();
+
+            if (f<100){
+                System.out.println("You won");
+            }else {
+                System.out.println("You lost");
+                break;
+            }
+
+
+
+
+        }while (false);  //it ends after first true integer. So we re using true condition
+
+
+
 
 
 

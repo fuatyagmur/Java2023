@@ -61,7 +61,7 @@ public class Q1 {
 
         //or
 
-        int lasstt=countries[countries.length-1].length();
+        int lasstt=countries[countries.length-1].length();   //it makes dynamic
         System.out.println("lasstt = " + lasstt);
 
 

@@ -51,6 +51,30 @@ public class Q3 {
         int sumoMinMax=numbers[0] + numbers[numbers.length-1];
         System.out.println("sumoMinMax = " + sumoMinMax);
 
+        //2 way
+
+        int nums[]=new int[4];
+
+        nums[0]=14;
+        nums[1]=23;
+        nums[2]=3;
+        nums[3]=43;
+
+        System.out.println(Arrays.toString(nums));
+
+        int minValues=numbers[0];
+        int maxValues=numbers[0];
+
+        for (int w:nums) {
+           minValues= Math.min(minValues,w);
+           maxValues=Math.max(maxValues,w);
+            
+        }
+
+        System.out.println(minValues);
+        System.out.println(maxValues);
+
+        System.out.println(maxValues+minValues);
 
     }
 }

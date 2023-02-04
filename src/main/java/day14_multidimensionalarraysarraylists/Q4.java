@@ -1,6 +1,8 @@
 package day14_multidimensionalarraysarraylists;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Q4 {
@@ -48,7 +50,50 @@ public class Q4 {
         boolean r2=ages.containsAll(prices);
         System.out.println(r2);
 
+        //How to check if two lists are same or not
+        List<String> names1=new ArrayList<>();
+        names1.add("Tom");
+        names1.add("Angie");
+        names1.add("Mark");
 
+
+        List<String> names2=new ArrayList<>();
+        names2.add("Tom");
+        names2.add("Angie");
+        names2.add("Mark");
+
+        boolean r3=names1.equals(names2);
+        System.out.println("r3 = " + r3);
+
+
+
+        //Example 1:Type code to check if two lists have same elements.
+        //          Same elements can be in different indexes.
+        //          [A, B, C] and [A, C, B] and [B, A, C] etc ==> true
+
+        List<Character> m=new ArrayList<>();
+        m.add('A');
+        m.add('B');
+        m.add('C');
+
+
+        List<Character> x=new ArrayList<>();
+        x.add('A');
+        x.add('C');
+        x.add('B');
+
+
+        List<Character> z=new ArrayList<>();
+        z.add('B');
+        z.add('A');
+        z.add('C');
+
+        Collections.sort(m);    //Collections.sort puts the elements in alphabetical order
+        Collections.sort(x);
+        Collections.sort(z);
+
+        boolean r4=m.equals(x);
+        System.out.println("r4 = " + r4);
 
 
 

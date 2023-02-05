@@ -16,6 +16,7 @@ public class ArrayLists03 {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a letter...");
         char letter = input.next().charAt(0);
+        letter=Character.toUpperCase(letter);
 
         List<Character> myList = new ArrayList<>();
         myList.add('J');

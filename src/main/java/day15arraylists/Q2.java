@@ -78,18 +78,18 @@ public class Q2 {
         System.out.println("yourList = " + yourList);  //yourList = [2, 3, 5]
 
 
-        //3.way
-        for (int i = 0; i < yourList.size() ; i++) {
-            if (yourList.indexOf(i)!=yourList.lastIndexOf(i)){
-                yourList.remove(i);
-
-                i--;
-
-            }
-
-        }
-
-        System.out.println("Another way: "+yourList);  //Another way: [2, 3, 5]
+//        //3.way   [2,3,2,2,5]
+//        for (int i = 0; i < yourList.size() ; i++) {
+//            if (yourList.indexOf(i)!=yourList.lastIndexOf(i)){
+//                yourList.remove(i);
+//
+//                i--;
+//
+//            }
+//
+//        }
+//
+//        System.out.println("Another way: "+yourList);  //Another way: [2, 3, 5]
 
 
     }

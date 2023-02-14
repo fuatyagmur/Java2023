@@ -3,7 +3,7 @@ package practices.lists;
 import java.util.ArrayList;
 import java.util.List;
 
-public class lists02 {
+public class lists02_sumOfElementswException {
 
     public static void main(String[] args) {
 

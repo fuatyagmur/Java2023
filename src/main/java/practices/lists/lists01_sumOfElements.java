@@ -3,7 +3,7 @@ package practices.lists;
 import java.util.ArrayList;
 import java.util.List;
 
-public class lists01 {
+public class lists01_sumOfElements {
 
     public static void main(String[] args) {
 

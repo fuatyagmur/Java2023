@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class lists04 {
+public class lists04_descendingOrder {
 
     public static void main(String[] args) {
 

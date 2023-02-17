@@ -29,6 +29,26 @@ public class PassByValueAndPassByReference {
         System.out.println(abs);  //10
 
 
+        //Create a method adds two integers
+        System.out.println(twoIntegers(3, 8));  //11
+        //or
+        int resultTwoIntegers=twoIntegers(5,8);
+        System.out.println(resultTwoIntegers);  //13
+
+
+        //Create a method prints the first and the last character on the console
+        printFirstAndLast("Hello, world!");
+
+        //Create a method prints the sum of the ASCII values of characters in a String
+        System.out.println("sumOfAscii(\"Hello, world!\") = " + sumOfAscii("Hello, world!"));  //1161
+
+        //or
+
+        String str="Hello, world!";
+        int sum=sumOfAscii(str);
+        System.out.println(sum); //1161
+
+
     }
 
     public static void studentShirtPrice(int shirtPrice, int discount){
@@ -64,10 +84,44 @@ public class PassByValueAndPassByReference {
         }
     }
 
-
     //Create a method adds two integers
+    public static int twoIntegers(int a,int b){
+        return a+b;
+    }
+
+
+
     //Create a method prints the first and the last character on the console
+
+    public static String printFirstAndLast(String str){
+
+        char firstChar=str.charAt(0);
+        char lastChar=str.charAt(str.length()-1);
+
+        System.out.println("firstChar = " + firstChar);  //firstChar = H
+        System.out.println("lastChar = " + lastChar);  //lastChar = !
+
+       return  str;
+
+
+    }
+
+
+
     //Create a method prints the sum of the ASCII values of characters in a String
+    public static int sumOfAscii(String strAscii){
+
+        int sum=0;
+
+        for (int i = 0; i <strAscii.length() ; i++) {
+            char c=strAscii.charAt(i);
+
+            sum+=c;
+            
+        }
+        return sum;
+
+    }
 
 
 

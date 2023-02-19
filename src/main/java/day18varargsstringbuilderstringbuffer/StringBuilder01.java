@@ -32,6 +32,7 @@ public class StringBuilder01 {
         //Java creates a new container for the updated value and puts the updated value in the new container.
         String t = s.concat("!");
         System.out.println(s);//Java
+        System.out.println(t); //Java!
 
         s = s.concat("Wooow");
         System.out.println(s);//JavaWooow
@@ -47,6 +48,10 @@ public class StringBuilder01 {
         //insert(4," is love"); will skip first 4 characters, then insert " is love"
         sb1.insert(4," is love");
         System.out.println(sb1);//Java is love!...
+//        sb1.delete(0,4);
+//        System.out.println(sb1);
+//        sb1.insert(0,"Love");
+//        System.out.println(sb1);  //Love is love!...
 
         sb1.insert(2, "Money", 1, 4);
         System.out.println(sb1);//Jaoneva is love!...

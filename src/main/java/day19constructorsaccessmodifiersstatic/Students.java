@@ -51,5 +51,15 @@ public class Students {
     //Create constructor by using IntelliJ
 
 
+    public Students(String stdName, int age) {
+        this.stdName = stdName;
+        this.age = age;
+    }
+
+    public Students(String stdName, String gender) {
+        this.stdName = stdName;
+        this.gender = gender;
+    }
+
 
 }

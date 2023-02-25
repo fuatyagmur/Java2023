@@ -10,7 +10,7 @@ public class VehicleRunner {
 
         //2.way is using the class constructors
 
-        Civic myCivic=new Civic();
+        Civic myCivic=new Civic(true);
 
         myCivic.move();
         myCivic.engine();

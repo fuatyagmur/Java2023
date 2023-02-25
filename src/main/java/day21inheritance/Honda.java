@@ -10,4 +10,14 @@ public class Honda extends Vehicle{
         System.out.println("Honda stops securely...");
     }
 
+    public Honda() {
+        super();
+        System.out.println("Honda constructor...");
+    }
+
+    public Honda (int year){
+        super("Luxry Honda");
+        System.out.println("Honda constructor with int parameter worked...");
+
+    }
 }

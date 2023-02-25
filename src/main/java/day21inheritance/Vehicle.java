@@ -34,4 +34,10 @@ public class Vehicle {
     public Vehicle() {
         System.out.println("Vehicle constructor...");
     }
+
+    public Vehicle(String name){
+        this();
+        System.out.println("Vehicle constructor with String parameter worked");
+    }
 }
+

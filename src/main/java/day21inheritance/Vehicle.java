@@ -21,6 +21,30 @@ public class Vehicle {
     12) "this()" and "super()" cannot be used in the same constructır body together, because if you anyone of them
     the other line can accept the second one.
 
+     13) If a variable exists in a Class Java uses the variable from the class itself
+    14) If a class does not have the requested variable in it, Java looks for the variable in the parent classes
+    15) If you use "this" inside the constructor, it means you are calling a variable from the class itself
+    16) If you use "super" inside the constructor, it means you are calling a variable from the first level paent class.
+
+        What is the difference between "this()" and "super()" ?
+        Answer: "this()" is for calling constructor from the class itself.
+                 "super()" is for calling constructor from the first level parent class.
+
+         What is the difference between "this()" and "this" ?
+         Answer: "this()" is for calling constructor from the class itself.
+                 "this" is for calling object from the class itself.
+
+         What is the difference between "super()" and "super" ?
+         Answer:  "super()" is for calling constructor from the first level parent class.
+                  "super" is for calling object from the first level parent class.
+
+            OOP (Object Oriented Programming)  Concept has 4 principles;
+            1)Inheritance +
+            2) PolyMorphism --> MethodOverloading(+) + MethodOverriding(-)
+            3) Encapsulation -
+            4) Abstraction --> Abstract Classes and Interfaces
+
+
      */
 
     public void move(){

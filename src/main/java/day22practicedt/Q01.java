@@ -9,6 +9,7 @@ public class Q01 {
 
         calculateAverage("Ali", 90, 87, 78, 90, 100, 90);
         calculateAverage("Aisha",  78, 90, 100, 90);
+        calculateAverage("Fuat",78,89,90,91,99,96);
 
 
 

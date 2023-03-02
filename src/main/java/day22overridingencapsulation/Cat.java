@@ -16,4 +16,14 @@ public class Cat extends Mammal {
     public Mammal occur() {
         return new Cat();
     }
+
+    @Override
+    public Integer number() {
+        return 456;
+    }
+
+    @Override
+    public int num() {
+        return 24;
+    }
 }

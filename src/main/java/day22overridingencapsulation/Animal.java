@@ -50,6 +50,14 @@ public class Animal {
         return new Animal();
     }
 
+    public Integer number(){
+        return 123;
+    }
+
+    public int num(){
+        return 12;
+    }
+
 
 
 

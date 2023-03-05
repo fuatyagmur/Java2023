@@ -30,6 +30,14 @@ public class Student {
     public boolean isSuccess() {
         return success;
     }
+
+    public void setSuccess(boolean success){
+        this.success=success;
+    }
+
+    public void setPsychologicalIssues(String psychologicalIssues) {
+        this.psychologicalIssues = psychologicalIssues;
+    }
 }
 
 

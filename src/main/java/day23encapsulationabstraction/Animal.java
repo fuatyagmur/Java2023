@@ -41,4 +41,10 @@ public abstract class Animal {
         System.out.println("Animals play..");
     }
 
+//    public void hunt(){
+//        System.out.println("Animals hunt...");
+//    }
+
+
+
 }

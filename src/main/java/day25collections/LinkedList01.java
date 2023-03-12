@@ -1,5 +1,7 @@
 package day25collections;
 
+import java.util.LinkedList;
+
 public class LinkedList01 {
 
     public static void main(String[] args) {
@@ -36,13 +38,21 @@ public class LinkedList01 {
      */
 
 
+        LinkedList<String> names=new LinkedList<>();
 
+        names.add("Ali");
+        names.addLast("Brad");
+        names.add(2,"Jim");
+        names.addFirst("Angie");
+        names.add(2,"Fatih");
+        names.addLast("Brad");
+        names.add("Ali");
 
+        System.out.println("names = " + names);   //names = [Angie, Ali, Fatih, Brad, Jim, Brad, Ali]
 
-
-
-
-
+       String f1= names.remove(); //removes first element
+        System.out.println("f1 = " + f1);  //Angie
+        System.out.println("names = " + names);  //names = [Ali, Fatih, Brad, Jim, Brad, Ali]
 
 
     }

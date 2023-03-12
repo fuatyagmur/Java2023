@@ -54,6 +54,14 @@ public class LinkedList01 {
         System.out.println("f1 = " + f1);  //Angie
         System.out.println("names = " + names);  //names = [Ali, Fatih, Brad, Jim, Brad, Ali]
 
+        Boolean r1=names.remove("Bradx");
+        System.out.println("r1 = " + r1);   //false because there is no Bradx element in the LinkedList(names).
+        System.out.println("names = " + names);
+
+        String r2=names.remove(1);  //names = [Ali, Fatih, Brad, Jim, Brad, Ali]
+        System.out.println("r2 = " + r2);  //r2 = Fatih
+        System.out.println("names = " + names);  //names = [Ali, Brad, Jim, Brad, Ali]
+
 
     }
 }

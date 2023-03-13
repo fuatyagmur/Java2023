@@ -54,8 +54,8 @@ public class LinkedList01 {
         System.out.println("f1 = " + f1);  //Angie
         System.out.println("names = " + names);  //names = [Ali, Fatih, Brad, Jim, Brad, Ali]
 
-        Boolean r1=names.remove("Bradx");
-        System.out.println("r1 = " + r1);   //false because there is no Bradx element in the LinkedList(names).
+        Boolean rg=names.remove("Bradx");
+        System.out.println("r1 = " + rg);   //false because there is no Bradx element in the LinkedList(names).
         System.out.println("names = " + names);
 
         String rf=names.remove(1);  //names = [Ali, Fatih, Brad, Jim, Brad, Ali]
@@ -92,6 +92,54 @@ public class LinkedList01 {
                                                        ii)What the method returns?
                                                        iii)How the method behaves for specific scenarios?
         */
+
+
+        LinkedList<String> students = new LinkedList<>();
+
+        students.add("Ali");
+        students.addLast("Brad");
+        students.add(2, "Jim");
+        students.addLast("Brad");
+        students.addFirst("Angie");
+        students.addLast("Brad");
+        students.add("Ali");
+        System.out.println(students);// [Angie, Ali, Brad, Jim, Brad, Brad, Ali]
+
+        //Removes and returns the first element of this list.
+        //This method is equivalent to removeFirst().
+        //NoSuchElementException – if this list is empty
+        students.pop();
+        System.out.println(students);// [Ali, Brad, Jim, Brad, Brad, Ali]
+
+        //Retrieves and removes the first element of this list.
+        //Returns the head of this list, or null if this list is empty
+        students.poll();
+
+
+        //Retrieves, but does not remove, the first element of this list.(Copy + Paste)
+        //NoSuchElementException – if this list is empty
+        String r5 = students.element();
+        System.out.println(r5);//Brad
+        System.out.println(students);// [Brad, Jim, Brad, Brad, Ali]
+
+        //Retrieves, but does not remove, the first element of this list.(Copy + Paste)
+        //Returns the head of this list, or null if this list is empty
+        String r6 = students.peek();
+        System.out.println(r6);//Brad
+        System.out.println(students);// [Brad, Jim, Brad, Brad, Ali]
+
+        //Returns the first element in this list
+        //NoSuchElementException – if this list is empty
+        String r7 = students.getFirst();
+        System.out.println(r7);//Brad
+        System.out.println(students);// [Brad, Jim, Brad, Brad, Ali]
+
+        String r8 = students.get(1);
+        System.out.println(r8);
+        System.out.println(students);// [Brad, Jim, Brad, Brad, Ali]
+
+        students.set(1, "Jhon");
+        System.out.println(students);// [Brad, Jhon, Brad, Brad, Ali]
 
 
     }

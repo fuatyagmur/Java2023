@@ -58,9 +58,40 @@ public class LinkedList01 {
         System.out.println("r1 = " + r1);   //false because there is no Bradx element in the LinkedList(names).
         System.out.println("names = " + names);
 
-        String r2=names.remove(1);  //names = [Ali, Fatih, Brad, Jim, Brad, Ali]
-        System.out.println("r2 = " + r2);  //r2 = Fatih
+        String rf=names.remove(1);  //names = [Ali, Fatih, Brad, Jim, Brad, Ali]
+        System.out.println("r2 = " + rf);  //r2 = Fatih
         System.out.println("names = " + names);  //names = [Ali, Brad, Jim, Brad, Ali]
+
+        //Removes the first occurrence of the specified element from this list, if it is present.
+        //If this list does not contain the element, it is unchanged.
+        //Returns "true" if this list contained the specified element
+        boolean r1 = names.remove("Brad");
+        System.out.println(r1);//true
+        System.out.println(names);// [Ali, Jim, Brad, Brad, Ali]
+
+        //Removes the element at the specified position in this list.
+        //Returns the element previously at the specified position.
+        String r2 = names.remove(1);
+        System.out.println(r2);// Jim
+        System.out.println(names);// [Ali, Brad, Brad, Ali]
+
+        //Removes and returns the last element from this list.
+        String r3 = names.removeLast();
+        System.out.println(r3);
+        System.out.println(names);// [Ali, Brad, Brad]
+
+        //Removes the last occurrence of the specified element in this list.
+        //If the list does not contain the element, it is unchanged.
+        //Returns boolean
+        boolean r4 = names.removeLastOccurrence("Brad");
+        System.out.println(r4);//true
+        System.out.println(names);// [Ali, Brad]
+
+        /*
+            When you learn a method focus on 3 things; i)What the method does?
+                                                       ii)What the method returns?
+                                                       iii)How the method behaves for specific scenarios?
+        */
 
 
     }

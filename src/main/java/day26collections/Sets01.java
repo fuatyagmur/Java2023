@@ -78,6 +78,19 @@ public class Sets01 {
         System.out.println("myLhs = " + myLhs);  //myLhs = [12, 31, 14, 53, 34]
 
 
+          /*
+            You have all products set, you have discounted products set
+            You want to see discounted products in the all products set
+
+            all products set ==> TV, Radio, Fridge, Watch, Laptop
+            discounted products set ==> Radio, Laptop, Chair
+
+            all products set.retainAll(discounted products set) ==> Radio, Laptop
+
+            //Note: retainAll() can be used with HashSet, LinkedHashSet, and TreeSet as well
+         */
+
+
     }
 
 

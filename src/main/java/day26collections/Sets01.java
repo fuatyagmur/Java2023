@@ -56,6 +56,28 @@ public class Sets01 {
         // --> LinkedHashSet puts the elements in "insertion order"
 
 
+
+        LinkedHashSet<Integer> myLhs=new LinkedHashSet<>();
+
+        myLhs.add(12);
+        myLhs.add(31);
+        myLhs.add(14);
+        myLhs.add(53);
+        myLhs.add(34);
+
+        System.out.println("myLhs = " + myLhs);  //myLhs = [12, 31, 14, 53, 34]
+
+        //lhs.retainAll(myLhs);
+
+        System.out.println("lhs = " + lhs);  //lhs = [12, 14, 34]
+
+        boolean r1=lhs.retainAll(myLhs);  // retainAll() method does not touch myLhs which is the method inside the parenthesis
+
+        System.out.println("lhs = " + lhs);  //lhs = [12, 14, 34]
+        System.out.println("r1 = " + r1);  //true
+        System.out.println("myLhs = " + myLhs);  //myLhs = [12, 31, 14, 53, 34]
+
+
     }
 
 

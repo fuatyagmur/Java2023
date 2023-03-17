@@ -36,6 +36,18 @@ public class Queue01 {
         System.out.println("myQue = " + myQue);  // [Ajda, Jim, Brad, Tom] ==> Elements are in an "order" according to the Java logic
         // because I used PriorityQueue as constructor.
 
+        Queue<Integer> intQue = new PriorityQueue<>();//PriorityQueue only cares about the first element is the least!
+        intQue.add(9);
+        intQue.add(5);
+        intQue.add(15);
+        intQue.add(91);
+        intQue.add(-9);
+
+        System.out.println("intQue = " + intQue);
+        System.out.println(intQue.remove());//In queue methods are implemented on the first element in order.
+        System.out.println("intQue = " + intQue);//[5, 9, 15, 91]
+
+
         Deque<String> dq = new LinkedList<>();
         dq.add("Tom");
         dq.add("Ajda");

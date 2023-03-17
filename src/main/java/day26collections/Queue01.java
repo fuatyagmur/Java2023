@@ -1,5 +1,10 @@
 package day26collections;
 
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
 public class Queue01 {
 
     /*
@@ -9,6 +14,37 @@ public class Queue01 {
 
     public static void main(String[] args) {
 
+
+        Queue<String> que=new LinkedList<>();
+        que.add("Tom");
+        que.add("Ajda");
+        que.add("Brad");
+        que.add("Jim");
+
+        System.out.println("que = " + que);  //que = [Tom, Ajda, Brad, Jim]
+        // ==>Elements are in "insertion order" because I used LinkedList as constructor
+
+
+        Queue<String> myQue=new PriorityQueue<>();
+        myQue.add("Tom");
+        myQue.add("Ajda");
+        myQue.add("Brad");
+        myQue.add("Jim");
+        myQue.add("Aaron");
+        myQue.add("Cindy");
+
+        System.out.println("myQue = " + myQue);  // [Ajda, Jim, Brad, Tom] ==> Elements are in an "order" according to the Java logic
+        // because I used PriorityQueue as constructor.
+
+        Deque<String> dq = new LinkedList<>();
+        dq.add("Tom");
+        dq.add("Ajda");
+        dq.add("Brad");
+        dq.add("Jim");
+
+        System.out.println(dq);// [Tom, Ajda, Brad, Jim]
+        //If you look at the Deque methods, you will notice the methods are in ...first() and ...last()
+        //The methods are focusing first and the last elements.
 
 
     }

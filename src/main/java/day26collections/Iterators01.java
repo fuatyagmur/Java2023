@@ -3,6 +3,7 @@ package day26collections;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Iterators01 {
     public static void main(String[] args) {
@@ -47,10 +48,50 @@ public class Iterators01 {
         yourList.add("Aaron");
         yourList.add("Cindy");
 
-        System.out.println("yourList = " + yourList);
+        System.out.println("yourList = " + yourList);  //yourList = [Tom, Ajda, Brad, Jim, Aaron, Cindy]
 
         Iterator<String> yourItr= yourList.listIterator();
 
+        while (yourItr.hasNext()){
+            yourItr.next();
+            yourItr.remove(); //Removes from the underlying collection the last element returned
+        }
+
+        System.out.println("yourList = " + yourList);  //yourList = []
+
+        //ListIterator
+        List<String> herList=new ArrayList<>();
+
+        herList.add("Tom");
+        herList.add("Ajda");
+        herList.add("Brad");
+        herList.add("Jim");
+        herList.add("Aaron");
+        herList.add("Cindy");
+
+        System.out.println("herList = " + herList);  //herList = [Tom, Ajda, Brad, Jim, Aaron, Cindy]
+
+        ListIterator<String> herItr= herList.listIterator();
+
+        while (herItr.hasNext()){
+            String str= herItr.next();
+            herItr.set(str+"!...");
+
+        }
+
+        System.out.println("herList = " + herList);  //herList = [Tom!..., Ajda!..., Brad!..., Jim!..., Aaron!..., Cindy!...]
+
+        //Example: Print the herList elements on the console from the last element to the first element
+        //         in the same line with a space between two consecutive elements
+
+        //moving the pointer at the end
+        while (herItr.hasNext()){
+            herItr.next();
+        }
+
+        while (herItr.hasPrevious()){
+            System.out.print( herItr.previous() + " ");  //Cindy!... Aaron!... Jim!... Brad!... Ajda!... Tom!...
+        }
 
     }
 

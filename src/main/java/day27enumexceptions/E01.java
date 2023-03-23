@@ -18,6 +18,8 @@ public class E01 {
         System.out.println(divide1(0,55));
         System.out.println(divide1(6,0));
 
+        System.out.println(divide2(4,0));
+
 
     }
 
@@ -34,6 +36,19 @@ public class E01 {
         }else {
             return a/b;
         }
+
+    }
+
+
+    public static int divide2(int a,int b){
+        int result=0;
+        try {
+            result=a/b;
+
+        }catch (ArithmeticException e){
+            System.out.println("Dvider can not be 0");
+        }
+        return result;
 
     }
 

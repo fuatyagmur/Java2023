@@ -14,11 +14,17 @@ public class E01 {
 
 
     public static void main(String[] args) {
-        System.out.println(divide1(4,2));
-        System.out.println(divide1(0,55));
-        System.out.println(divide1(6,0));
+        System.out.println(divide1(4,2));  //2
+        System.out.println(divide1(0,55));  //0
+        System.out.println(divide1(6,0));  //ArithmeticException ==> / by zero
+        System.out.println("Hello world"); //divide1(6,0) threw
+
+        //ArithmeticException that is why this code can not be executed.
+        //        //When you break any mathematical rule like dividing by zero, Java throws ArithmeticException.
+
 
         System.out.println(divide2(4,0));
+        System.out.println(divide2(4,1));
 
 
     }
@@ -40,14 +46,22 @@ public class E01 {
     }
 
 
+    //2.Way: Use try-catch
+
     public static int divide2(int a,int b){
         int result=0;
         try {
+            System.out.println("Hello world 2");
             result=a/b;
 
         }catch (ArithmeticException e){
             System.out.println("Dvider can not be 0");
+
+            ////"catch block" executed just for Exceptions, if "try block" does not throw any Exception
+            //                                      //"catch block" will not be executed.
+
         }
+
         return result;
 
     }
